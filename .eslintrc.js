@@ -4,9 +4,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: [
-    'plugin:@web-bee-ru/eslint-plugin/react',
-  ],
+  extends: ['plugin:@web-bee-ru/eslint-plugin/react'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -15,17 +13,12 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  plugins: [
-    'react',
-    '@typescript-eslint',
-    '@web-bee-ru',
-  ],
+  plugins: ['react', '@typescript-eslint', '@web-bee-ru'],
   rules: {
     'react/jsx-uses-react': 'off',
     'react/react-in-jsx-scope': 'off',
+    // 'no-console': 'off',
   },
-
-
 };
 
 // @web-bee-ru/eslint-plugin
