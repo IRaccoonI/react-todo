@@ -30,8 +30,8 @@ const TodoCard = (): ReactElement => {
   );
 
   const clearTodo = useCallback(() => {
-    setTodos(todos.splice(0, todos.length));
-  }, [todos]);
+    setTodos([]);
+  }, []);
 
   const removeTodo = useCallback((id: number): void => {
     setTodos((curTodos) => curTodos.filter((todo) => todo.id !== id));
